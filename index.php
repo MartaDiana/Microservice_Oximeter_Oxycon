@@ -5,7 +5,7 @@ require_once 'MongoDB.php';
 $mg = new MongoDB('patientdocument');
 
 // mqtt requirement
-$server = '192.168.41.187';        // change if necessary MONGODB SERVER
+$server = '192.168.51.187';        // change if necessary MONGODB SERVER
 $port      = 1883;                      // change if necessary
 $username  = '';                    // set your username
 $password  = '';                    // set your password

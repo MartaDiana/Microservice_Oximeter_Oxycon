@@ -9,13 +9,13 @@ class MongoDB
     protected $name;
     protected $client;
 
-    public function __construct(String $collection) {
+    public function __construct(string $collection) {
       $this->db = new MongoDB\Client;
       $this->name = $collection;
     }
 
     // getcollection
-    public function updateSensor(int $kodealat, array $dataFlow = []) {
+    public function updateSensor(string $kodealat, array $dataFlow = []) {
         try {
           $koleksi = $this->name;
           $this->db->Oxycon->$koleksi->updateOne(
@@ -30,7 +30,7 @@ class MongoDB
       }
     }
 
-    public function docHistory(int $kodealat, array $data) {
+    public function docHistory(string $kodealat, array $data) {
       try {
         $koleksi = $this->name;
         $this->db->Oxycon->$koleksi->updateOne(
